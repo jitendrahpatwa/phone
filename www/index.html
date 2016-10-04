@@ -29,16 +29,16 @@
     }
     function popup(){
     	navigator.notification.confirm(
-          'Exit Pocket Employee '
-        , function(button) {
+          'Exit Pocket Employee ', 
+	  function(button) {
               if (button == 2) {
                   navigator.app.exitApp();
               } 
-          }
-        , 'Exit'
-        , 'No,Yes'
-    );  
-    return false;
+          },
+	  'Exit', 
+	  'No,Yes'
+        );  
+        return false;
     }
 function onError(err) { 
 	//if(err.code==1)
